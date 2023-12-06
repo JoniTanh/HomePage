@@ -1,6 +1,21 @@
 # React + Vite
 
+### Frontend setup
+
+secrets.js
+
+```
+const SECRETS = {
+  EMAIL: "",
+  PHONE: "",
+};
+
+export default SECRETS;
+```
+
 ### Backend setup
+
+.env
 
 ```
 PORT=

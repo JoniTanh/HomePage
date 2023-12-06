@@ -53,18 +53,18 @@ export default function Home() {
           <div className="pl-[120px] pr-[30px] md:px-[120px] mx-auto my-36">
             <div className="text-2xl md:text-5xl">About.</div>
             <div className="pt-8 max-w-3xl">
-              Hiya! I'm Joni. I'm a person who enjoys learning and exploring. My
-              hobbies include geocaching, hiking in nature, solving mysteries,
-              and playing video games. On this website, I showcase my coding
-              projects.
+              Hiya! I am Joni. I am a person who enjoys learning and exploring.
+              My hobbies include geocaching, hiking in nature, solving
+              mysteries, and playing video games. On this website, I showcase my
+              coding projects.
             </div>
             <div className="pt-8 max-w-3xl">
-              I'm looking for a new job opportunity and am open to exploring
+              I am looking for a new job opportunity and am open to exploring
               different work possibilities. You are welcome to suggest projects
               to me that I could implement as part of my portfolio. You can also
               suggest new technologies, programming languages, frameworks, etc.,
-              that I haven't used before. If I'm not already familiar with them,
-              I'm willing to learn.
+              that I haven't used before. If I am not already familiar with
+              them, I am willing to learn.
             </div>
             <div className="flex text-xl md:text-3xl mt-12">
               <div

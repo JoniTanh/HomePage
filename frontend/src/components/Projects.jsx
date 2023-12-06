@@ -1,3 +1,7 @@
 export default function () {
-  return <>Projects</>;
+  return (
+    <>
+      <div className="text-gray-500 sourceCodePro">Projects</div>
+    </>
+  );
 }
