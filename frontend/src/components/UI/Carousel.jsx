@@ -1,15 +1,11 @@
 import React, { useState, useRef } from "react";
 import styles from "../../assets/carousel.module.css";
 import classNames from "classnames";
-
-import image1 from "../../assets/projects/family-tree/addperson.png";
-import image2 from "../../assets/projects/family-tree/loginpage.png";
 import ImageModal from "./ImageModal";
 
-const Carousel = () => {
+const Carousel = ({ images }) => {
   const dialog = useRef();
   const [currentSlide, setCurrentSlide] = useState(0);
-  const images = [image1, image2];
 
   const goToPrevious = () => {
     const newSlide = currentSlide === 0 ? images.length - 1 : currentSlide - 1;

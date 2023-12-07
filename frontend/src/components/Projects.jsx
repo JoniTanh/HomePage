@@ -1,4 +1,9 @@
-import Carousel from "./UI/Carousel";
+import AngularWeather from "./Projects/AngularWeather";
+import AngulareCommerce from "./Projects/AngulareCommerce";
+import FamilyTree from "./Projects/FamilyTree";
+import ReactQuiz from "./Projects/ReactQuiz";
+import ReacteCommerce from "./Projects/ReacteCommerce";
+import VueMusic from "./Projects/VueMusic";
 
 export default function () {
   return (
@@ -20,32 +25,12 @@ export default function () {
                 tekstiä tekstiä. Teksti tekstiä tekstiä. Teksti tekstiä tekstiä.
                 Teksti tekstiä tekstiä.
               </div>
-              <div className="flex flex-col xl:flex-row xl:min-h-[600px] min-h-auto">
-                <div className="w-full xl:w-3/5 pr-6">
-                  <div className="mb-4">Family Tree App</div>
-                  Tähän tietoa projekteista. Tähän tietoa projekteista. Tähän
-                  tietoa projekteista. Tähän tietoa projekteista. Tähän tietoa
-                  projekteista. Tähän tietoa projekteista. Tähän tietoa
-                  projekteista. Tähän tietoa projekteista. Tähän tietoa
-                  projekteista. Tähän tietoa projekteista. Tähän tietoa
-                  projekteista. Tähän tietoa projekteista. Tähän tietoa
-                  projekteista. Tähän tietoa projekteista. Tähän tietoa
-                  projekteista. Tähän tietoa projekteista. Tähän tietoa
-                  projekteista. Tähän tietoa projekteista. Tähän tietoa
-                  projekteista. Tähän tietoa projekteista. Tähän tietoa
-                  projekteista. Tähän tietoa projekteista. Tähän tietoa
-                  projekteista. Tähän tietoa projekteista. Tähän tietoa
-                  projekteista. Tähän tietoa projekteista. Tähän tietoa
-                  projekteista. Tähän tietoa projekteista. Tähän tietoa
-                  projekteista. Tähän tietoa projekteista. Tähän tietoa
-                  projekteista. Tähän tietoa projekteista. Tähän tietoa
-                  projekteista. Tähän tietoa projekteista. Tähän tietoa
-                  projekteista. Tähän tietoa projekteista.
-                </div>
-                <div className="w-full xl:w-2/5 ml-4">
-                  <Carousel />
-                </div>
-              </div>
+              <FamilyTree />
+              <ReacteCommerce />
+              <ReactQuiz />
+              <AngulareCommerce />
+              <AngularWeather />
+              <VueMusic />
             </div>
           </div>
         </div>

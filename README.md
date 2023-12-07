@@ -1,5 +1,7 @@
 # React + Vite
 
+**NoteToMyself: Need to transfer images to the backend and use a service like Firebase.**
+
 ### Frontend setup
 
 secrets.js
