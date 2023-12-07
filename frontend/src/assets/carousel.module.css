@@ -1,0 +1,73 @@
+.carouselContainer {
+    position: relative;
+    overflow: hidden;
+}
+
+.carouselImages {
+    display: flex;
+}
+
+.carouselImage {
+    display: none;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.carouselImage:hover {
+    cursor: pointer;
+}
+
+.carouselImage.active {
+    display: block;
+    width: 100%;
+}
+
+.carouselButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.carouselButton.prev {
+    left: 10px;
+    border-radius: 5px;
+}
+
+.carouselButton.next {
+    right: 10px;
+    border-radius: 5px;
+}
+
+.carouselButton.prev:hover, 
+.carouselButton.next:hover {
+    background-color: rgb(156 163 175);
+}
+
+@media screen and (min-width: 1350px) {
+    .carouselImage {
+        min-height: auto;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .carouselImage {
+        min-height: 600px;
+        height: 600px;
+        object-fit: fill;
+    }
+}
+
+@media screen and (min-width: 3400px) {
+    .carouselImage {
+        min-height: 600px;
+        height: auto;
+        object-fit: fill;
+    }
+}

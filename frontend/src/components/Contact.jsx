@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import emailService from "../services/emailServices";
 import ContactForm from "./ContactForm";
 import ResultModal from "./UI/ResultModal";
-import linkedInLogo from "../assets/linkedin.png";
+import linkedInLogo from "../assets/logos/linkedin.png";
 import SECRETS from "../secrets";
 
 const initialFormData = () => ({

@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from "react";
 import SideBar from "./SideBar";
-import angularLogo from "../assets/angular.png";
-import nodejsLogo from "../assets/nodejs.png";
+import angularLogo from "../assets/logos/angular.png";
+import nodejsLogo from "../assets/logos/nodejs.png";
 import LogoItem from "./UI/LogoItem";
-import reactLogo from "../assets/react.png";
-import typeScriptLogo from "../assets/ts-logo-256.png";
-import javaScriptLogo from "../assets/js-logo.png";
-import vueLogo from "../assets/vue-logo.png";
-import mongoDbLogo from "../assets/mongoDB_SpringGreen.png";
-import csharpLogo from "../assets/csharp_Logo.png";
-import springBootLogo from "../assets/spring-boot.png";
-import aspnetLogo from "../assets/net-core.png";
-import mySqlLogo from "../assets/logo-mysql-170x115.png";
-import gitLogo from "../assets/git-Icon.png";
-import tailwindLogo from "../assets/tailwind.png";
-import sassLogo from "../assets/sass-1-logo.png";
-import digitalOceanLogo from "../assets/digitalOcean-logo.png";
-import awsLogo from "../assets/aws-logo.png";
+import reactLogo from "../assets/logos/react.png";
+import typeScriptLogo from "../assets/logos/ts-logo-256.png";
+import javaScriptLogo from "../assets/logos/js-logo.png";
+import vueLogo from "../assets/logos/vue-logo.png";
+import mongoDbLogo from "../assets/logos/mongoDB_SpringGreen.png";
+import csharpLogo from "../assets/logos/csharp_Logo.png";
+import springBootLogo from "../assets/logos/spring-boot.png";
+import aspnetLogo from "../assets/logos/net-core.png";
+import mySqlLogo from "../assets/logos/logo-mysql-170x115.png";
+import gitLogo from "../assets/logos/git-Icon.png";
+import tailwindLogo from "../assets/logos/tailwind.png";
+import sassLogo from "../assets/logos/sass-1-logo.png";
+import digitalOceanLogo from "../assets/logos/digitalOcean-logo.png";
+import awsLogo from "../assets/logos/aws-logo.png";
 
 const titles = [
   { text: "SOFTWARE DEVELOPER", color: "text-blue-500" },
@@ -77,9 +77,53 @@ export default function Home() {
             <div className="text-3xl mt-10">Technologies.</div>
             <div className="my-10 flex flex-wrap content-center gap-7 max-w-5xl">
               <LogoItem
+                path="https://dotnet.microsoft.com/en-us/apps/aspnet"
+                image={aspnetLogo}
+                text="ASP.NET"
+                extraStyles="pt-2"
+              />
+              <LogoItem
+                path="https://aws.amazon.com/"
+                image={awsLogo}
+                text="AWS"
+                extraStyles="pt-4 w-20"
+              />
+              <LogoItem
                 path="https://angular.io/"
                 image={angularLogo}
                 text="Angular"
+              />
+              <LogoItem
+                path="https://learn.microsoft.com/en-us/dotnet/csharp/"
+                image={csharpLogo}
+                text="C Sharp"
+              />
+              <LogoItem
+                path="https://www.digitalocean.com/"
+                image={digitalOceanLogo}
+                text="DigitalOcean"
+              />
+              <LogoItem
+                path="https://git-scm.com/"
+                image={gitLogo}
+                text="Git"
+              />
+              <LogoItem
+                path="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                image={javaScriptLogo}
+                text="JavaScript"
+              />
+              <LogoItem
+                path="https://www.mongodb.com/"
+                image={mongoDbLogo}
+                text="MongoDB"
+                extraStyles="pt-5 w-36"
+              />
+              <LogoItem
+                path="https://www.mysql.com/"
+                image={mySqlLogo}
+                text="mySQL"
+                extraStyles="pt-3.5"
               />
               <LogoItem
                 path="https://nodejs.org/en"
@@ -93,26 +137,10 @@ export default function Home() {
                 text="React"
               />
               <LogoItem
-                path="https://www.typescriptlang.org/"
-                image={typeScriptLogo}
-                text="TypeScript"
-              />
-              <LogoItem
-                path="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                image={javaScriptLogo}
-                text="JavaScript"
-              />
-              <LogoItem path="https://vuejs.org/" image={vueLogo} text="Vue" />
-              <LogoItem
-                path="https://www.mongodb.com/"
-                image={mongoDbLogo}
-                text="MongoDB"
-                extraStyles="pt-6 w-36"
-              />
-              <LogoItem
-                path="https://learn.microsoft.com/en-us/dotnet/csharp/"
-                image={csharpLogo}
-                text="C Sharp"
+                path="https://sass-lang.com/"
+                image={sassLogo}
+                text="Sass"
+                extraStyles="pt-2"
               />
               <LogoItem
                 path="https://spring.io/"
@@ -120,45 +148,17 @@ export default function Home() {
                 text="Spring Boot"
               />
               <LogoItem
-                path="https://dotnet.microsoft.com/en-us/apps/aspnet"
-                image={aspnetLogo}
-                text="ASP.NET"
-                extraStyles="pt-3"
-              />
-              <LogoItem
-                path="https://www.mysql.com/"
-                image={mySqlLogo}
-                text="mySQL"
-                extraStyles="pt-4"
-              />
-              <LogoItem
-                path="https://git-scm.com/"
-                image={gitLogo}
-                text="Git"
-              />
-              <LogoItem
                 path="https://tailwindcss.com/"
                 image={tailwindLogo}
                 text="Tailwind"
-                extraStyles="pt-6"
+                extraStyles="pt-3"
               />
               <LogoItem
-                path="https://sass-lang.com/"
-                image={sassLogo}
-                text="Sass"
-                extraStyles="pt-4"
+                path="https://www.typescriptlang.org/"
+                image={typeScriptLogo}
+                text="TypeScript"
               />
-              <LogoItem
-                path="https://www.digitalocean.com/"
-                image={digitalOceanLogo}
-                text="DigitalOcean"
-              />
-              <LogoItem
-                path="https://aws.amazon.com/"
-                image={awsLogo}
-                text="AWS"
-                extraStyles="pt-4 w-36"
-              />
+              <LogoItem path="https://vuejs.org/" image={vueLogo} text="Vue" />
             </div>
           </div>
         </div>

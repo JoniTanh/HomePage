@@ -1,5 +1,5 @@
-import githubLogo from "../assets/github-mark-white.png";
-import linkedInLogo from "../assets/linkedin.png";
+import githubLogo from "../assets/logos/github-mark-white.png";
+import linkedInLogo from "../assets/logos/linkedin.png";
 
 export default function SideBar() {
   return (
