@@ -1,0 +1,29 @@
+.awsLogo {
+    padding-top: 1rem;
+    width: 5rem;
+}
+
+.tailwindLogo {
+    padding-top: 0.75rem;
+}
+
+.mongodbLogo {
+    padding-top: 1.25rem;
+    width: 9rem;
+}
+
+.mysqlLogo {
+    padding-top: 0.875rem;
+}
+
+.sassLogo {
+    padding-top: 0.5rem;
+}
+
+.aspnetLogo {
+    padding-top: 0.5rem;
+}
+
+.nodejsLogo {
+    padding-top: 1.5rem;
+}

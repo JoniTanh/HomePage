@@ -1,23 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import ProjectDescription from "../UI/ProjectDescription";
-import storageService from "../../services/storageServices";
+import useFetchImages from "../../hooks/useFetchImages";
 
 export default function AngularWeather() {
   const [images, setImages] = useState([]);
-
-  useEffect(() => {
-    const fetchImages = async () => {
-      try {
-        const projectName = "angularWeather";
-        const imagesData = await storageService.getImages(projectName);
-        setImages(imagesData);
-      } catch (error) {
-        console.error("Error fetching images:", error);
-      }
-    };
-
-    fetchImages();
-  }, []);
+  useFetchImages("angularWeather", setImages);
 
   return (
     <>

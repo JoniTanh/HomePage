@@ -1,3 +1,5 @@
+import "../../assets/logos.css";
+
 export default function LogoItem({
   path,
   image,
