@@ -45,17 +45,20 @@ export default function Contact() {
   };
 
   useEffect(() => {
-    const fetchImages = async () => {
+    const fetchLogos = async () => {
       try {
-        const projectName = "logos";
-        const logosData = await storageService.getImages(projectName);
-        setLogo(logosData.images[8]);
+        const logosData = await storageService.getLogos();
+        const linkedInLogo = logosData.find((logo) =>
+          logo.name.toLowerCase().includes("linkedin")
+        );
+
+        setLogo(linkedInLogo);
       } catch (error) {
-        console.error("Error fetching images:", error);
+        console.error("Error fetching logos:", error);
       }
     };
 
-    fetchImages();
+    fetchLogos();
   }, []);
 
   return (
@@ -90,14 +93,10 @@ export default function Contact() {
                   )}
                 </div>
                 <div className="mt-8 w-12 h-12">
-                  <a
-                    href="https://www.linkedin.com/in/joni-tanhuansuu-411011141/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={logo.page} target="_blank" rel="noopener noreferrer">
                     <img
-                      src={logo}
-                      alt="LinkedIn Logo"
+                      src={logo.url}
+                      alt={logo.name}
                       className="w-full h-full object-contain cursor-pointer"
                     />
                   </a>

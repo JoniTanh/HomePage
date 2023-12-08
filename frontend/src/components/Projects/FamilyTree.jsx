@@ -10,7 +10,7 @@ export default function FamilyTree() {
       try {
         const projectName = "familyTree";
         const imagesData = await storageService.getImages(projectName);
-        setImages(imagesData.images);
+        setImages(imagesData);
       } catch (error) {
         console.error("Error fetching images:", error);
       }

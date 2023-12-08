@@ -21,17 +21,22 @@ const Carousel = ({ images }) => {
     dialog.current.open();
   };
 
+  // TODO:
+  if (!images || images.length === 0) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className={styles.carouselContainer}>
       <div className={styles.carouselImages}>
         {images.map((image, index) => (
           <img
-            key={index}
-            src={image}
+            key={image.id}
+            src={image.url}
             className={classNames(styles.carouselImage, {
               [styles.active]: index === currentSlide,
             })}
-            alt={`Slide ${index + 1}`}
+            alt={`${image.name} Slide ${index + 1}`}
             onClick={openModal}
           />
         ))}
@@ -50,7 +55,7 @@ const Carousel = ({ images }) => {
       </button>
       <ImageModal
         ref={dialog}
-        imageSrc={images[currentSlide]}
+        imageSrc={images[currentSlide].url}
         onPrev={goToPrevious}
         onNext={goToNext}
       />

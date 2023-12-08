@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:3001/api/images";
-
+const baseUrl = "http://localhost:3001/api";
 const imageCache = new Map();
 
 const getImages = async (projectName) => {
@@ -9,12 +8,37 @@ const getImages = async (projectName) => {
     return imageCache.get(projectName);
   }
 
-  const response = await axios.get(`${baseUrl}/${projectName}`);
-  const images = response.data;
+  try {
+    const response = await axios.get(`${baseUrl}/images`, {
+      params: { project: projectName },
+    });
+    const images = response.data;
 
-  imageCache.set(projectName, images);
-
-  return images;
+    imageCache.set(projectName, images);
+    return images;
+  } catch (error) {
+    console.error("Error fetching images:", error);
+    throw error;
+  }
 };
 
-export default { getImages };
+const getLogos = async () => {
+  const cacheKey = "logos";
+
+  if (imageCache.has(cacheKey)) {
+    return imageCache.get(cacheKey);
+  }
+
+  try {
+    const response = await axios.get(`${baseUrl}/logos`);
+    const logos = response.data;
+
+    imageCache.set(cacheKey, logos);
+    return logos;
+  } catch (error) {
+    console.error("Error fetching logos:", error);
+    throw error;
+  }
+};
+
+export default { getImages, getLogos };

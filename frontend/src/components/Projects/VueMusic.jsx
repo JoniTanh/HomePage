@@ -10,7 +10,7 @@ export default function VueMusic() {
       try {
         const projectName = "vueMusic";
         const imagesData = await storageService.getImages(projectName);
-        setImages(imagesData.images);
+        setImages(imagesData);
       } catch (error) {
         console.error("Error fetching images:", error);
       }

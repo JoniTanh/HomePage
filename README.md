@@ -1,6 +1,6 @@
 # React + Vite
 
-**Note to Myself:** The free version of Firebase is not suitable for my needs. Change it.
+**Note to Myself:** Consider alternatives for image hosting..
 
 ### Frontend setup
 
@@ -24,13 +24,7 @@ PORT=
 MAILGUN_API_KEY=
 MAILGUN_DOMAIN=
 EMAIL=
-
-FIREBASE_API_KEY=
-FIREBASE_AUTH_DOMAIN=
-FIREBASE_PROJECT_ID=
-FIREBASE_STORAGE_BUCKET=
-FIREBASE_MESSAGING_SENDER_ID=
-FIREBASE_APP_ID=
+MONGODB_URI=
 ```
 
 Currently, two official plugins are available:
