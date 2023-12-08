@@ -1,7 +1,5 @@
 # React + Vite
 
-**NoteToMyself: Need to transfer images to the backend and use a service like Firebase.**
-
 ### Frontend setup
 
 secrets.js
@@ -24,9 +22,14 @@ PORT=
 MAILGUN_API_KEY=
 MAILGUN_DOMAIN=
 EMAIL=
-```
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FIREBASE_API_KEY=
+FIREBASE_AUTH_DOMAIN=
+FIREBASE_PROJECT_ID=
+FIREBASE_STORAGE_BUCKET=
+FIREBASE_MESSAGING_SENDER_ID=
+FIREBASE_APP_ID=
+```
 
 Currently, two official plugins are available:
 

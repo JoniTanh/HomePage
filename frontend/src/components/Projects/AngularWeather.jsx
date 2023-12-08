@@ -1,12 +1,24 @@
+import React, { useState, useEffect } from "react";
 import ProjectDescription from "../UI/ProjectDescription";
-
-import image1 from "../../assets/projects/angular-weather/managepage.png";
-import image2 from "../../assets/projects/angular-weather/myweatherpage.png";
-import image3 from "../../assets/projects/angular-weather/openweatherapi.png";
-import image4 from "../../assets/projects/angular-weather/addweather.png";
+import storageService from "../../services/storageServices";
 
 export default function AngularWeather() {
-  const images = [image1, image2, image3, image4];
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+    const fetchImages = async () => {
+      try {
+        const projectName = "angularWeather";
+        const imagesData = await storageService.getImages(projectName);
+        setImages(imagesData.images);
+      } catch (error) {
+        console.error("Error fetching images:", error);
+      }
+    };
+
+    fetchImages();
+  }, []);
+
   return (
     <>
       <ProjectDescription

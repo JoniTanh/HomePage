@@ -1,8 +1,8 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import emailService from "../services/emailServices";
+import storageService from "../services/storageServices";
 import ContactForm from "./ContactForm";
 import ResultModal from "./UI/ResultModal";
-import linkedInLogo from "../assets/logos/linkedin.png";
 import SECRETS from "../secrets";
 
 const initialFormData = () => ({
@@ -18,6 +18,7 @@ export default function Contact() {
   const [isSuccess, setIsSuccess] = useState(false);
   const [formData, setFormData] = useState(initialFormData());
   const [showPhone, setShowPhone] = useState(false);
+  const [logo, setLogo] = useState([]);
 
   const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
@@ -42,6 +43,20 @@ export default function Contact() {
   const togglePhoneDisplay = () => {
     setShowPhone(!showPhone);
   };
+
+  useEffect(() => {
+    const fetchImages = async () => {
+      try {
+        const projectName = "logos";
+        const logosData = await storageService.getImages(projectName);
+        setLogo(logosData.images[8]);
+      } catch (error) {
+        console.error("Error fetching images:", error);
+      }
+    };
+
+    fetchImages();
+  }, []);
 
   return (
     <>
@@ -81,7 +96,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                   >
                     <img
-                      src={linkedInLogo}
+                      src={logo}
                       alt="LinkedIn Logo"
                       className="w-full h-full object-contain cursor-pointer"
                     />

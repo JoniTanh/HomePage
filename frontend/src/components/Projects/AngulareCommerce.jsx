@@ -1,13 +1,24 @@
+import React, { useState, useEffect } from "react";
 import ProjectDescription from "../UI/ProjectDescription";
+import storageService from "../../services/storageServices";
 
-import image1 from "../../assets/projects/angular-eCommerce/armourpage.png";
-import image2 from "../../assets/projects/angular-eCommerce/cartpage.png";
-import image3 from "../../assets/projects/angular-eCommerce/checkoutpage.png";
-import image4 from "../../assets/projects/angular-eCommerce/checkoutpagetwo.png";
-import image5 from "../../assets/projects/angular-eCommerce/orderspage.png";
+export default function AngularECommerce() {
+  const [images, setImages] = useState([]);
 
-export default function AngulareCommerce() {
-  const images = [image1, image2, image3, image4, image5];
+  useEffect(() => {
+    const fetchImages = async () => {
+      try {
+        const projectName = "angulareCommerce";
+        const imagesData = await storageService.getImages(projectName);
+        setImages(imagesData.images);
+      } catch (error) {
+        console.error("Error fetching images:", error);
+      }
+    };
+
+    fetchImages();
+  }, []);
+
   return (
     <>
       <ProjectDescription

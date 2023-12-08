@@ -1,7 +1,4 @@
-import githubLogo from "../assets/logos/github-mark-white.png";
-import linkedInLogo from "../assets/logos/linkedin.png";
-
-export default function SideBar() {
+export default function SideBar({ githubLogo, linkedInLogo }) {
   return (
     <div className="w-12 h-12 absolute bottom-1/2 m-6">
       <div>
