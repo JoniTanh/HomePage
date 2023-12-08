@@ -1,5 +1,7 @@
 # React + Vite
 
+**Note to Myself:** The free version of Firebase is not suitable for my needs. Change it.
+
 ### Frontend setup
 
 secrets.js
