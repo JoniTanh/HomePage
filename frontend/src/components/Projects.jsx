@@ -70,18 +70,18 @@ export default function () {
         <div className="mx-auto my-36 px-8 md:px-20 lg:pl-16 xl:pl-40">
           <div className="flex flex-col md:flex-row md:space-x-10">
             <div className="w-full">
-              <div className="text-2xl lg:text-5xl">Projects.</div>
-              <div className="pt-8 max-w-3xl mb-20">
-                Teksti tekstiä tekstiä. Teksti tekstiä tekstiä. Teksti tekstiä
-                tekstiä. Teksti tekstiä tekstiä. Teksti tekstiä tekstiä. Teksti
-                tekstiä tekstiä. Teksti tekstiä tekstiä. Teksti tekstiä tekstiä.
-                Teksti tekstiä tekstiä. Teksti tekstiä tekstiä. Teksti tekstiä
-                tekstiä. Teksti tekstiä tekstiä. Teksti tekstiä tekstiä. Teksti
-                tekstiä tekstiä. Teksti tekstiä tekstiä. Teksti tekstiä tekstiä.
-                Teksti tekstiä tekstiä. Teksti tekstiä tekstiä. Teksti tekstiä
-                tekstiä. Teksti tekstiä tekstiä. Teksti tekstiä tekstiä. Teksti
-                tekstiä tekstiä. Teksti tekstiä tekstiä. Teksti tekstiä tekstiä.
-                Teksti tekstiä tekstiä.
+              <div className="text-2xl lg:text-5xl text-blue-700">
+                Projects.
+              </div>
+              <div className="pt-8 max-w-6xl mb-20">
+                On this page, you will find some of my practice projects. Some
+                of them are still under development, evolving and changing over
+                time. Each project is its own separate entity, and currently,
+                I'm focusing on JavaScript technologies, such as React, Angular,
+                Vue, and Node in my work. However, my intention in the future is
+                to further expand my technical knowledge and delve deeper into
+                other programming languages and technologies, such as Java, C#,
+                and Python. I'm also working on a game project with Unity.
               </div>
               <div>
                 {loadedProjects.map((projectName, index) => (

@@ -47,7 +47,7 @@ export default function Home() {
         </div>
         <div className="flex-1 text-gray-500 sourceCodePro">
           <div className="pl-[120px] pr-[30px] md:px-[120px] mx-auto my-36">
-            <div className="text-2xl md:text-5xl">About.</div>
+            <div className="text-2xl md:text-5xl text-green-700">About.</div>
             <div className="pt-8 max-w-3xl">
               Hiya! I am Joni. I am a person who enjoys learning and exploring.
               My hobbies include geocaching, hiking in nature, solving
@@ -65,7 +65,7 @@ export default function Home() {
             <div className="flex text-xl md:text-3xl mt-12">
               <TitleRotator />
             </div>
-            <div className="text-3xl mt-10">Technologies.</div>
+            <div className="text-3xl mt-10 text-orange-400">Technologies</div>
             <div className="my-10 flex flex-wrap content-center gap-7 max-w-5xl">
               {logos.map((logo, index) => (
                 <LogoItem

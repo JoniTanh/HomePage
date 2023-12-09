@@ -67,15 +67,16 @@ export default function Contact() {
         <div className="mx-auto my-36 px-24 md:px-20 lg:px-40">
           <div className="flex flex-col md:flex-row md:space-x-10">
             <div className="w-auto md:w-1/2">
-              <div className="text-2xl md:text-5xl">Contact.</div>
+              <div className="text-2xl md:text-5xl text-orange-400">
+                Contact.
+              </div>
               <div className="pt-8 max-w-3xl mb-6">
-                I am always ready to hear from you! If you have any questions,
-                suggestions, would like to discuss potential collaboration, or
-                have a job offer, please feel free to reach out. You can contact
-                me by calling, sending an email directly to the address below,
-                via LinkedIn, or by using this contact form. Just fill in the
-                necessary information below, and I will get back to you as soon
-                as possible.
+                I am always ready to hear from you! Whether you have questions,
+                suggestions, are interested in collaborating, or have a job
+                offer, I'm here to listen. Feel free to reach out by calling,
+                sending an email directly to the address below, via LinkedIn, or
+                through this contact form. For the form, simply fill in your
+                details, and I'll respond as quickly as possible.
               </div>
               <div className="mb-6">
                 <div>E-mail: {SECRETS.EMAIL}</div>
