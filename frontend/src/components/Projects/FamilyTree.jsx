@@ -16,7 +16,7 @@ export default function FamilyTree() {
           "Originally, this application was created for my mother to make it easier for her to continue her genealogical research and gather information in one place.",
         ]}
         images={images}
-        technologies="React, Node.js, MongoDB, Digital Ocean"
+        technologies="React, Node.js, MongoDB, Bootstrap, Digital Ocean"
         githubLink="https://github.com/JoniTanh/FamilyTreeApp"
       />
     </>

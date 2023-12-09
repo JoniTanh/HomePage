@@ -11,7 +11,7 @@ export default function NavBar() {
           <div className="w-auto pr-10 sourceCodePro">
             <ul className="flex flex-row p-4 mt-0 space-x-8 text-gray-500">
               <NavItem path="/about" text="About" />
-              <NavItem path="/projects" text="Projects" />
+              <NavItem path="/portfolio" text="Portfolio" />
               <NavItem path="/contact" text="Contact" />
             </ul>
           </div>

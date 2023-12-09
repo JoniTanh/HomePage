@@ -1,3 +1,4 @@
+const path = require("path");
 const config = require("./utils/config");
 const express = require("express");
 const app = express();
@@ -25,11 +26,14 @@ mongoose
 app.use(cors());
 app.use(express.json());
 app.use(middleware.requestLogger);
-app.use(express.static("build"));
+app.use(express.static("dist"));
 
 app.use("/api", emailRoutes);
 app.use("/api/logos", logosRouter);
 app.use("/api/images", imagesRouter);
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "dist", "index.html"));
+});
 
 app.use(middleware.errorHandler);
 
