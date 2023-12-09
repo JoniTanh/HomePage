@@ -64,13 +64,13 @@ export default function Contact() {
   return (
     <>
       <div className="flex-1 text-gray-500 sourceCodePro">
-        <div className="mx-auto my-36 px-24 md:px-20 lg:px-40">
+        <div className="mx-auto my-20 sm:my-24 px-8 sm:px-20 lg:px-40">
           <div className="flex flex-col md:flex-row md:space-x-10">
             <div className="w-auto md:w-1/2">
               <div className="text-2xl md:text-5xl text-orange-400">
                 Contact.
               </div>
-              <div className="pt-8 max-w-3xl mb-6">
+              <div className="pt-8 w-full xl:max-w-3xl mb-6">
                 I am always ready to hear from you! Whether you have questions,
                 suggestions, are interested in collaborating, or have a job
                 offer, I'm here to listen. Feel free to reach out by calling,
@@ -104,7 +104,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            <div className="w-auto md:w-1/2">
+            <div className="w-full md:w-1/2">
               <ContactForm
                 formData={formData}
                 handleChange={handleChange}

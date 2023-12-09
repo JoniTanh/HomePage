@@ -4,7 +4,7 @@ export default function NavItem({ path, text, logo = false }) {
   const linkClass = logo ? "logoLink" : "navLink";
 
   return (
-    <li className="pr-4">
+    <li>
       <NavLink
         className={({ isActive }) =>
           isActive && !logo ? `${linkClass} active` : linkClass

@@ -21,7 +21,7 @@ export default function ProjectDescription({
             <span className="text-orange-400">Technologies & Tools: </span>
             <span>{technologies}</span>
           </div>
-          <div>
+          <div className="mb-6">
             <span>GitHub repo: </span>
             <a
               className="text-blue-500 hover:text-blue-300"
