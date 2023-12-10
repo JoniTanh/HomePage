@@ -18,6 +18,8 @@ export default function FamilyTree() {
         images={images}
         technologies="React, Node.js, MongoDB, Bootstrap, Digital Ocean"
         githubLink="https://github.com/JoniTanh/FamilyTreeApp"
+        note={true}
+        noteText="Note: The persons in the images are products of imagination."
       />
     </>
   );

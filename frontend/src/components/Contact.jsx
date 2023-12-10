@@ -70,7 +70,7 @@ export default function Contact() {
               <div className="text-2xl md:text-5xl text-orange-400">
                 Contact.
               </div>
-              <div className="pt-8 w-full xl:max-w-3xl mb-6">
+              <div className="pt-8 w-full xl:max-w-3xl mb-6 text-justify">
                 I am always ready to hear from you! Whether you have questions,
                 suggestions, are interested in collaborating, or have a job
                 offer, I'm here to listen. Feel free to reach out by calling,

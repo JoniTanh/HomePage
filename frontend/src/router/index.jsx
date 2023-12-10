@@ -1,5 +1,5 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
-import Home from "../components/Home";
+import Home, { loader as logosLoader } from "../components/Home";
 import Contact from "../components/Contact";
 import Projects from "../components/Projects";
 import Layout from "../utils/Layout";
@@ -13,6 +13,7 @@ const router = createBrowserRouter([
         path: "",
         element: <Home />,
         index: true,
+        loader: logosLoader,
       },
       {
         path: "/portfolio",

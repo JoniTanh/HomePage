@@ -69,7 +69,7 @@ export default function () {
       <div className="text-gray-500 sourceCodePro">
         <div className="mx-auto my-20 sm:my-24 px-8 md:px-20 lg:pl-16 xl:pl-40">
           <div className="flex flex-col md:flex-row md:space-x-10">
-            <div className="w-full">
+            <div className="w-full text-justify">
               <div className="text-2xl lg:text-5xl text-blue-700">
                 Portfolio.
               </div>
@@ -87,6 +87,10 @@ export default function () {
                 </div>
                 <div className="pt-10">
                   <div className="mb-4 text-xl text-green-600">Website</div>
+                  <div className="text-justify text-red-500">
+                    Note: Education and work experience details are a work in
+                    progress.
+                  </div>
                   <div className="my-8">
                     <span className="text-orange-400">
                       Technologies & Tools:{" "}
