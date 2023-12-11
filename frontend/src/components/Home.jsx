@@ -29,17 +29,21 @@ export default function Home() {
           <div className="px-8 xl:pl-[120px] md:px-[120px] mx-auto my-20 sm:my-24">
             <div className="text-2xl md:text-5xl text-green-700">About.</div>
             <div className="pt-8 w-full xl:max-w-3xl text-justify">
-              Hiya! I am Joni. I am a person who enjoys learning and exploring.
+              Hiya! My name is Joni, a person who enjoys learning and exploring.
               My hobbies include geocaching, hiking in nature, and playing video
-              games. On this website, I showcase my coding projects.
+              games. This website showcases my coding projects.
             </div>
             <div className="pt-8 w-full xl:max-w-3xl text-justify">
-              I am looking for a new job opportunity and am open to exploring
-              different work possibilities. You are welcome to suggest projects
-              to me that I could implement as part of my portfolio. You can also
-              suggest new technologies, programming languages, frameworks, etc.,
-              that I haven't used before. If I am not already familiar with
-              them, I am willing to learn.
+              Looking for new job opportunities, I am open to various
+              challenges. You are welcome to suggest projects that I could
+              implement as part of my portfolio, or new technologies,
+              programming languages, frameworks, etc., that I haven't used
+              before. Willing to learn, I embrace new experiences, especially if
+              they are unfamiliar to me.
+            </div>
+            <div className="pt-8 w-full xl:max-w-3xl text-justify">
+              Currently, my studies focus on advanced Node.js, SQL, and React
+              Native, for example.
             </div>
             <div className="block md:hidden">
               <div className="flex my-10 flex-wrap content-center gap-5 max-w-5xl">

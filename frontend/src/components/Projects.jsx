@@ -96,7 +96,8 @@ export default function () {
                       Technologies & Tools:{" "}
                     </span>
                     <span>
-                      React, Node.js, MongoDB, Tailwind, Vite, Digital Ocean
+                      React, Node.js, MongoDB, Tailwind, Vite, Digital Ocean,
+                      Cloudflare
                     </span>
                   </div>
                   <div>

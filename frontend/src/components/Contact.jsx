@@ -104,7 +104,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 md:mt-20">
               <ContactForm
                 formData={formData}
                 handleChange={handleChange}
