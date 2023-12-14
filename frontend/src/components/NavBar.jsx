@@ -8,7 +8,7 @@ export default function NavBar() {
           <ul className="logo text-4xl pl-10 hidden sm:flex">
             <NavItem path="/" text="JT" logo={true} />
           </ul>
-          <div className="w-full sm:pr-10 mx-6 sm:mx-0 text-2xl">
+          <div className="w-full sm:pr-10 mx-6 sm:mx-0 text-xl">
             <ul className="flex flex-row justify-between sm:justify-end p-4 mt-0 space-x-8">
               <NavItem path="/" text="About" />
               <NavItem path="/portfolio" text="Portfolio" />
