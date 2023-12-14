@@ -25,7 +25,7 @@ export default function Home() {
         <div className="hidden md:block md:w-24">
           <SideBar githubLogo={githubLogo} linkedInLogo={linkedInLogo} />
         </div>
-        <div className="flex-1 text-gray-500 sourceCodePro">
+        <div className="flex-1 sourceCodePro textTuplaShadow">
           <div className="px-8 xl:pl-[120px] md:px-[120px] mx-auto my-20 sm:my-24">
             <div className="text-2xl md:text-5xl text-green-700">About.</div>
             <div className="pt-8 w-full xl:max-w-3xl text-justify">
