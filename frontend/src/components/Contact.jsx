@@ -63,7 +63,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className="flex-1 sourceCodePro textTuplaShadow">
+      <div className="flex-1 sourceCodePro whiteColorBlackShadow">
         <div className="mx-auto my-20 sm:my-24 px-8 sm:px-20 lg:px-40">
           <div className="flex flex-col md:flex-row md:space-x-10">
             <div className="w-auto md:w-1/2">

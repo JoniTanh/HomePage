@@ -66,7 +66,7 @@ export default function () {
 
   return (
     <>
-      <div className="sourceCodePro textTuplaShadow">
+      <div className="sourceCodePro whiteColorBlackShadow">
         <div className="mx-auto my-20 sm:my-24 px-8 md:px-20 lg:pl-16 xl:pl-40">
           <div className="flex flex-col md:flex-row md:space-x-10">
             <div className="w-full text-justify">

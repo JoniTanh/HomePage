@@ -23,7 +23,7 @@ export default function FormInput({
     <div className="mb-6">
       <label
         htmlFor={name}
-        className="block mb-2 text-sm font-medium  textTuplaShadow"
+        className="block mb-2 text-sm font-medium whiteColorBlackShadow"
       >
         {labelText}
         {required && <span className="text-red-500"> *</span>}
