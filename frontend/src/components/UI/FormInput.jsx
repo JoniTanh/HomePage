@@ -8,6 +8,7 @@ export default function FormInput({
   labelText,
   textArea = false,
   rows = 8,
+  isDisabled = false,
 }) {
   const inputProps = {
     id,
@@ -15,8 +16,9 @@ export default function FormInput({
     value,
     onChange: handleChange,
     required,
-    className:
-      "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5",
+    className: `bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ${
+      isDisabled ? "bg-gray-400" : ""
+    }`,
   };
 
   return (
@@ -26,12 +28,17 @@ export default function FormInput({
         className="block mb-2 text-sm font-medium whiteColorBlackShadow"
       >
         {labelText}
-        {required && <span className="text-red-500"> *</span>}
+        {required && <span className="text-red-500">*</span>}
       </label>
       {textArea ? (
         <textarea {...inputProps} rows={rows} />
       ) : (
-        <input {...inputProps} type={type} />
+        <input
+          disabled={isDisabled}
+          className="`${is}`"
+          {...inputProps}
+          type={type}
+        />
       )}
     </div>
   );

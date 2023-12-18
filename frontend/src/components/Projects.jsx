@@ -6,10 +6,12 @@ import FamilyTree from "./Projects/FamilyTree";
 import ReactQuiz from "./Projects/ReactQuiz";
 import ReacteCommerce from "./Projects/ReacteCommerce";
 import VueMusic from "./Projects/VueMusic";
+import PlanetApp from "./Projects/PlanetApp";
 
 const projectNames = [
   "FamilyTree",
   "ReacteCommerce",
+  "PlanetApp",
   "ReactQuiz",
   "AngulareCommerce",
   "AngularWeather",
@@ -23,6 +25,7 @@ export default function () {
   const projectComponents = {
     FamilyTree: <FamilyTree />,
     ReacteCommerce: <ReacteCommerce />,
+    PlanetApp: <PlanetApp />,
     ReactQuiz: <ReactQuiz />,
     AngulareCommerce: <AngulareCommerce />,
     AngularWeather: <AngularWeather />,
@@ -89,7 +92,9 @@ export default function () {
                   <div className="mb-4 text-xl text-green-600">Website</div>
                   <div className="text-justify text-red-500">
                     Note: Education and work experience details are a work in
-                    progress.
+                    progress. Current projects are listed, and as the portfolio
+                    expands, they will be displayed as cards for a more visual
+                    presentation.
                   </div>
                   <div className="my-8">
                     <span className="text-orange-400">

@@ -65,35 +65,31 @@ export default function Contact() {
     <>
       <div className="flex-1 sourceCodePro whiteColorBlackShadow">
         <div className="mx-auto my-20 sm:my-24 px-8 sm:px-20 lg:px-40">
-          <div className="flex flex-col md:flex-row md:space-x-10">
-            <div className="w-auto md:w-1/2">
-              <div className="text-2xl md:text-5xl text-orange-400">
-                Contact.
-              </div>
-              <div className="pt-8 w-full xl:max-w-3xl mb-6 text-justify">
-                I am always ready to hear from you! Whether you have questions,
-                suggestions, are interested in collaborating, or have a job
-                offer, I'm here to listen. Feel free to reach out by calling,
-                sending an email directly to the address below, via LinkedIn, or
-                through this contact form. For the form, simply fill in your
-                details, and I'll respond as quickly as possible.
-              </div>
-              <div className="mb-6">
-                <div>E-mail: {SECRETS.EMAIL}</div>
+          <div className="text-2xl md:text-5xl text-orange-400 text-center">
+            Contact.
+          </div>
+          <div className="flex flex-col items-center w-full xl:w-1/2 mx-auto">
+            <div className="w-full pt-8 mb-6">
+              Feel free to contact me by phone, email, LinkedIn, or by filling
+              out the contact form.
+              <div className="flex items-center my-6">
                 <div>
-                  Phone:{" "}
-                  {showPhone ? (
-                    SECRETS.PHONE
-                  ) : (
-                    <button
-                      onClick={togglePhoneDisplay}
-                      className="text-blue-500"
-                    >
-                      Show Number
-                    </button>
-                  )}
+                  <div>E-mail: {SECRETS.EMAIL}</div>
+                  <div className="text-justify">
+                    Phone:{" "}
+                    {showPhone ? (
+                      SECRETS.PHONE
+                    ) : (
+                      <button
+                        onClick={togglePhoneDisplay}
+                        className="text-blue-500"
+                      >
+                        Show Number
+                      </button>
+                    )}
+                  </div>
                 </div>
-                <div className="mt-8 w-12 h-12">
+                <div className="ml-4 w-12 h-12">
                   <a href={logo.page} target="_blank" rel="noopener noreferrer">
                     <img
                       src={logo.url}
@@ -104,7 +100,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-1/2 md:mt-20">
+            <div className="w-full md:mt-0">
               <ContactForm
                 formData={formData}
                 handleChange={handleChange}
