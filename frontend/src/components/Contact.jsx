@@ -65,7 +65,7 @@ export default function Contact() {
     <>
       <div className="flex-1 sourceCodePro whiteColorBlackShadow">
         <div className="mx-auto my-20 sm:my-24 px-8 sm:px-20 lg:px-40">
-          <div className="text-2xl md:text-5xl text-orange-400 text-center">
+          <div className="text-2xl md:text-5xl text-orange-400 lg:text-center">
             Contact.
           </div>
           <div className="flex flex-col items-center w-full xl:w-1/2 mx-auto">

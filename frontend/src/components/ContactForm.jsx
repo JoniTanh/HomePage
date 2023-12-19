@@ -37,6 +37,7 @@ export default function ContactForm({ formData, handleChange, handleSubmit }) {
             value={formData.phoneNumber}
             handleChange={handleChange}
             labelText="Phone Number"
+            required={false}
           />
         </div>
       </div>
