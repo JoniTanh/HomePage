@@ -10,7 +10,7 @@ export default function PlanetApp() {
     <>
       <ProjectDescription
         title="Planet App"
-        description={["Coming soon.."]}
+        description={["Coming soon..."]}
         images={images}
         technologies="React, Node.js, Arwes UI, Emotion"
         githubLink="https://github.com/JoniTanh/PlanetApp"

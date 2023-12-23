@@ -7,11 +7,13 @@ import ReactQuiz from "./Projects/ReactQuiz";
 import ReacteCommerce from "./Projects/ReacteCommerce";
 import VueMusic from "./Projects/VueMusic";
 import PlanetApp from "./Projects/PlanetApp";
+import ReactGameBoy from "./Projects/ReactGameBoy";
 
 const projectNames = [
   "FamilyTree",
   "ReacteCommerce",
   "PlanetApp",
+  "ReactGameBoy",
   "ReactQuiz",
   "AngulareCommerce",
   "AngularWeather",
@@ -26,6 +28,7 @@ export default function () {
     FamilyTree: <FamilyTree />,
     ReacteCommerce: <ReacteCommerce />,
     PlanetApp: <PlanetApp />,
+    ReactGameBoy: <ReactGameBoy />,
     ReactQuiz: <ReactQuiz />,
     AngulareCommerce: <AngulareCommerce />,
     AngularWeather: <AngularWeather />,
