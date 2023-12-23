@@ -1,4 +1,5 @@
 const path = require("path");
+const helmet = require("helmet");
 const config = require("./utils/config");
 const express = require("express");
 const app = express();
@@ -24,6 +25,7 @@ mongoose
   });
 
 app.use(cors());
+app.use(helmet());
 app.use(express.json());
 app.use(middleware.requestLogger);
 app.use(express.static("dist"));
