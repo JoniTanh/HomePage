@@ -2,8 +2,8 @@ import React from "react";
 import SideBar from "./SideBar";
 import LogoItem from "./UI/LogoItem";
 import storageService from "../services/storageServices";
-import TitleRotator from "./TitleRotator";
 import { useLoaderData } from "react-router";
+import Timeline from "./Timeline.jsx";
 
 export default function Home() {
   const logosData = useLoaderData();
@@ -27,23 +27,21 @@ export default function Home() {
         </div>
         <div className="flex-1 sourceCodePro whiteColorBlackShadow">
           <div className="px-8 xl:pl-[120px] md:px-[120px] mx-auto my-20 sm:my-24">
-            <div className="text-2xl md:text-5xl text-green-700">About.</div>
-            <div className="pt-8 w-full xl:max-w-3xl text-justify">
+            <div className="text-2xl md:text-5xl text-green-700 w-full xl:w-4/5 mx-auto">
+              About.
+            </div>
+            <div className="pt-8 w-full xl:w-4/5 text-justify mx-auto">
               Hiya! My name is Joni, a person who enjoys learning and exploring.
               My hobbies include geocaching, hiking in nature, and playing video
               games. This website showcases my coding projects.
             </div>
-            <div className="pt-8 w-full xl:max-w-3xl text-justify">
+            <div className="pt-8 w-full xl:w-4/5 text-justify mx-auto">
               Looking for new job opportunities, I am open to various
               challenges. You are welcome to suggest projects that I could
               implement as part of my portfolio, or new technologies,
               programming languages, frameworks, etc., that I haven't used
               before. Willing to learn, I embrace new experiences, especially if
               they are unfamiliar to me.
-            </div>
-            <div className="pt-8 w-full xl:max-w-3xl text-justify">
-              Currently, my studies focus on advanced Node.js, SQL, and React
-              Native, for example.
             </div>
             <div className="block md:hidden">
               <div className="flex my-10 flex-wrap content-center gap-5 max-w-5xl">
@@ -61,11 +59,15 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="hidden md:block text-xl md:text-3xl mt-12">
-              <TitleRotator />
+            <div className="text-3xl mt-10 text-blue-600 w-full xl:w-4/5 mx-auto">
+              Experience
+              <span className="text-white"> & </span>
+              <span className="text-orange-400">Technologies</span>
             </div>
-            <div className="text-3xl mt-10 text-orange-400">Technologies</div>
-            <div className="my-10 flex flex-wrap content-center gap-7 max-w-5xl justify-center sm:justify-normal">
+            <div className="noTextShadow">
+              <Timeline />
+            </div>
+            <div className="my-10 flex flex-wrap content-center gap-7 w-full xl:w-2/3 mx-auto justify-center sm:justify-normal pt-24">
               {logos.map((logo, index) => (
                 <LogoItem
                   key={index}

@@ -94,8 +94,7 @@ export default function () {
                 <div className="pt-10">
                   <div className="mb-4 text-xl text-green-600">Website</div>
                   <div className="text-justify text-red-500">
-                    Note: Education and work experience details are a work in
-                    progress. Current projects are listed, and as the portfolio
+                    Note: Current projects are listed, and as the portfolio
                     expands, they will be displayed as cards for a more visual
                     presentation.
                   </div>

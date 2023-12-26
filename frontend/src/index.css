@@ -44,6 +44,11 @@ body {
     font-size: 16px;
 }
 
+.noTextShadow {
+    text-shadow: none;
+    color: black;
+}
+
 .navLink::after {
     content: '';
     display: block;
