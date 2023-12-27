@@ -3,7 +3,7 @@ import SideBar from "./SideBar";
 import LogoItem from "./UI/LogoItem";
 import storageService from "../services/storageServices";
 import { useLoaderData } from "react-router";
-import Timeline from "./Timeline.jsx";
+import Timeline from "./UI/Timeline.jsx";
 
 export default function Home() {
   const logosData = useLoaderData();
@@ -59,7 +59,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="text-3xl mt-10 text-blue-600 w-full xl:w-4/5 mx-auto">
+            <div className="text-2xl mt-10 text-blue-600 w-full xl:w-4/5 mx-auto">
               Experience
               <span className="text-white"> & </span>
               <span className="text-orange-400">Technologies</span>

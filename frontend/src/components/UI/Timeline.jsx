@@ -1,4 +1,4 @@
-import styles from "../assets/timeline.module.css";
+import styles from "../../assets/timeline.module.css";
 
 const timelineData = [
   {

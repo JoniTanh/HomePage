@@ -3,6 +3,7 @@ import Home, { loader as logosLoader } from "../components/Home";
 import Contact from "../components/Contact";
 import Projects from "../components/Projects";
 import Layout from "../utils/Layout";
+import ProjectDetails from "../components/UI/ProjectDetails";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/portfolio",
         element: <Projects />,
+      },
+      {
+        path: "/portfolio/:projectId",
+        element: <ProjectDetails />,
       },
       {
         path: "/contact",
