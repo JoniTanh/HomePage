@@ -6,10 +6,18 @@ import ImageModal from "./ImageModal";
 const Carousel = ({ images, projectId }) => {
   const dialog = useRef();
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setCurrentSlide(0);
+    setIsLoading(true);
   }, [projectId]);
+
+  useEffect(() => {
+    if (images && images.length > 0) {
+      setIsLoading(false);
+    }
+  }, [images]);
 
   const goToPrevious = () => {
     const newSlide = currentSlide === 0 ? images.length - 1 : currentSlide - 1;
@@ -25,8 +33,7 @@ const Carousel = ({ images, projectId }) => {
     dialog.current.open();
   };
 
-  // TODO:
-  if (!images || images.length === 0) {
+  if (isLoading) {
     return <div>Loading...</div>;
   }
 
