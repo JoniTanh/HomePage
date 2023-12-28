@@ -27,6 +27,7 @@ export default function ProjectDetails() {
 
   const previousProjectQuery = projectQueries[previousProjectIndex].imageQuery;
   const nextProjectQuery = projectQueries[nextProjectIndex].imageQuery;
+  const fallbackProjectQuery = projectQueries[0].imageQuery;
 
   if (!project) {
     return <div>Project not found.</div>;
@@ -47,13 +48,19 @@ export default function ProjectDetails() {
             </div>
             <div className="flex space-x-4">
               <button
-                onClick={() => navigate(`/portfolio/${previousProjectQuery}`)}
+                onClick={() => {
+                  const query = previousProjectQuery || fallbackProjectQuery;
+                  navigate(`/portfolio/${query}`);
+                }}
                 className="bg-blue-500 hover:bg-blue-700 whiteColorBlackShadow font-bold py-2 px-4 rounded mb-2"
               >
                 {"<"} Previous Project
               </button>
               <button
-                onClick={() => navigate(`/portfolio/${nextProjectQuery}`)}
+                onClick={() => {
+                  const query = nextProjectQuery || fallbackProjectQuery;
+                  navigate(`/portfolio/${query}`);
+                }}
                 className="bg-blue-500 hover:bg-blue-700 whiteColorBlackShadow font-bold py-2 px-4 rounded mb-2"
               >
                 Next Project {">"}
