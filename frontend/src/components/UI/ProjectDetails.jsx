@@ -105,7 +105,7 @@ export default function ProjectDetails() {
               </div>
             </div>
             <div className="w-full xl:w-3/5 mx-auto mt-6 mb-8">
-              <Carousel images={images} />
+              <Carousel images={images} projectId={projectId} />
             </div>
           </div>
         </div>
