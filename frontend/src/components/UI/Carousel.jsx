@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styles from "../../assets/carousel.module.css";
 import classNames from "classnames";
 import ImageModal from "./ImageModal";
